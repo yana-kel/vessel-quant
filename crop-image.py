@@ -24,7 +24,7 @@ cv2.destroyAllWindows()
 base = os.path.basename(img_path)        # e.g. "img2512101930-1.tif"
 name, ext = os.path.splitext(base)         # name="img2512101930-1", ext=".tif"
 
-output_name = f"data/{name}_roi.tif"            # "img2512101930-1_roi.tif"
+output_name = f"data/{name}_cropped.tif"            # "img2512101930-1_cropped.tif"
 print("Saving cropped image to: ", output_name)
 
 cv2.imwrite(output_name, cropped_img)
